@@ -3,7 +3,7 @@
 using namespace std;
  int a[5][5];
 
- bool dfs(int myStart,int myEnd){
+ bool findPath(int myStart,int myEnd){
     if(myStart==myEnd){
         return true;
     }
@@ -24,7 +24,7 @@ int main()
   a[0][2]=1;
   a[2][4]=1;
   a[3][4]=1;
-   cout<<"flag= "<<dfs(0,4)<<endl;
+   cout<<"flag= "<<findPath(0,4)<<endl;
     return 0;
 }
 
